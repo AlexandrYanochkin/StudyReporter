@@ -1,0 +1,6 @@
+Alex;LastName;4;Mathemathics;5;7;8;9;Chemistry;9;3;Economics;2;4;5;5
+Viktor;Surname;1;Mathemathics;5;2;9;8;9;Biology;7;8;Economics;2;4;5;5
+David;SecondLastName;3;Mathemathics;7;7;7;9;Programming;9;7;Economics;2;4
+John;SecondSurname;5;Mathemathics;8;4;4;Geometry;5;7;Economics;2;4;9;4
+Petr;ThirdLastName;2;Mathemathics;7;1;2;Chemistry;4;3;Economics;5;4;8;7
+Oleg;FourLastName;2;Mathemathics;8;9;9;3;Economics;5;5;5;5

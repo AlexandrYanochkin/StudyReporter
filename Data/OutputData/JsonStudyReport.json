@@ -1,0 +1,146 @@
+[
+  {
+    "FirstName": "Alex",
+    "LastName": "LastName",
+    "Course": 4,
+    "Subjects": [
+      {
+        "SubjectName": "Mathemathics",
+        "AverageMark": 7.25,
+        "MaxMark": 9,
+        "MinMark": 5
+      },
+      {
+        "SubjectName": "Chemistry",
+        "AverageMark": 6.0,
+        "MaxMark": 9,
+        "MinMark": 3
+      },
+      {
+        "SubjectName": "Economics",
+        "AverageMark": 4.0,
+        "MaxMark": 5,
+        "MinMark": 2
+      }
+    ]
+  },
+  {
+    "FirstName": "Viktor",
+    "LastName": "Surname",
+    "Course": 1,
+    "Subjects": [
+      {
+        "SubjectName": "Mathemathics",
+        "AverageMark": 6.6,
+        "MaxMark": 9,
+        "MinMark": 2
+      },
+      {
+        "SubjectName": "Biology",
+        "AverageMark": 7.5,
+        "MaxMark": 8,
+        "MinMark": 7
+      },
+      {
+        "SubjectName": "Economics",
+        "AverageMark": 4.0,
+        "MaxMark": 5,
+        "MinMark": 2
+      }
+    ]
+  },
+  {
+    "FirstName": "David",
+    "LastName": "SecondLastName",
+    "Course": 3,
+    "Subjects": [
+      {
+        "SubjectName": "Mathemathics",
+        "AverageMark": 7.5,
+        "MaxMark": 9,
+        "MinMark": 7
+      },
+      {
+        "SubjectName": "Programming",
+        "AverageMark": 8.0,
+        "MaxMark": 9,
+        "MinMark": 7
+      },
+      {
+        "SubjectName": "Economics",
+        "AverageMark": 3.0,
+        "MaxMark": 4,
+        "MinMark": 2
+      }
+    ]
+  },
+  {
+    "FirstName": "John",
+    "LastName": "SecondSurname",
+    "Course": 5,
+    "Subjects": [
+      {
+        "SubjectName": "Mathemathics",
+        "AverageMark": 5.333333333333333,
+        "MaxMark": 8,
+        "MinMark": 4
+      },
+      {
+        "SubjectName": "Geometry",
+        "AverageMark": 6.0,
+        "MaxMark": 7,
+        "MinMark": 5
+      },
+      {
+        "SubjectName": "Economics",
+        "AverageMark": 4.75,
+        "MaxMark": 9,
+        "MinMark": 2
+      }
+    ]
+  },
+  {
+    "FirstName": "Petr",
+    "LastName": "ThirdLastName",
+    "Course": 2,
+    "Subjects": [
+      {
+        "SubjectName": "Mathemathics",
+        "AverageMark": 3.3333333333333335,
+        "MaxMark": 7,
+        "MinMark": 1
+      },
+      {
+        "SubjectName": "Chemistry",
+        "AverageMark": 3.5,
+        "MaxMark": 4,
+        "MinMark": 3
+      },
+      {
+        "SubjectName": "Economics",
+        "AverageMark": 6.0,
+        "MaxMark": 8,
+        "MinMark": 4
+      }
+    ]
+  },
+  {
+    "FirstName": "Oleg",
+    "LastName": "FourLastName",
+    "Course": 2,
+    "Subjects": [
+      {
+        "SubjectName": "Mathemathics",
+        "AverageMark": 7.25,
+        "MaxMark": 9,
+        "MinMark": 3
+      },
+      {
+        "SubjectName": "Economics",
+        "AverageMark": 5.0,
+        "MaxMark": 5,
+        "MinMark": 5
+      }
+    ]
+  }
+]
