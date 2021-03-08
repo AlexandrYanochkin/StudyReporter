@@ -20,20 +20,12 @@ namespace StudyReporter.Features.Services.Validators
         {
             if (!ValidateFiels(item))
             {
-                return new ValidationResult
-                {
-                    IsValid = false,
-                    Error = ErrorMessages.StudentInvalidFields,
-                };
+                return ValidationResult.Failure(ErrorMessages.StudentInvalidFields);
             }
 
             if (!ValidateSubjects(item.Subjects))
             {
-                return new ValidationResult
-                {
-                    IsValid = false,
-                    Error = ErrorMessages.SubjectError,
-                };
+                return ValidationResult.Failure(ErrorMessages.SubjectError);
             }
 
             var subjectValidationResults = item.Subjects.Select(t => _subjectValidator.Validate(t));

@@ -17,11 +17,7 @@ namespace StudyReporter.Features.Services.Validators
 
             if (!areValidFields)
             {
-                return new ValidationResult
-                {
-                    IsValid = false,
-                    Error = ErrorMessages.SubjectInvalidFields,
-                };
+                return ValidationResult.Failure(ErrorMessages.SubjectInvalidFields);
             }
 
             return ValidationResult.SuccessfulResult;
