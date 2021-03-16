@@ -32,7 +32,9 @@ namespace StudyReporter.Features.Notifications
 
             public Task Handle(Notification notification, CancellationToken cancellationToken)
             {
-                using (var streamWriter = new StreamWriter($"{notification.FolderPath}\\{_reportName}"))
+                var outputFile = Path.Combine(notification.FolderPath, _reportName);
+
+                using (var streamWriter = new StreamWriter(outputFile))
                 {
                     var jsonSerializer = JsonSerializer.CreateDefault();
 
@@ -62,7 +64,9 @@ namespace StudyReporter.Features.Notifications
 
                 xDoc.Add(rootElement);
 
-                xDoc.Save($"{notification.FolderPath}\\{_reportName}");
+                var outputFile = Path.Combine(notification.FolderPath, _reportName);
+
+                xDoc.Save(outputFile);
 
                 return Task.CompletedTask;
             }

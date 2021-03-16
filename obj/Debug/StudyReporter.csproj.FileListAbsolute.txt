@@ -34,3 +34,4 @@ C:\Users\Aliaksandr_Yanachkin\source\repos\StudyReporter\StudyReporter\bin\Debug
 C:\Users\Aliaksandr_Yanachkin\source\repos\StudyReporter\StudyReporter\bin\Debug\System.Security.AccessControl.xml
 C:\Users\Aliaksandr_Yanachkin\source\repos\StudyReporter\StudyReporter\bin\Debug\System.Security.Permissions.xml
 C:\Users\Aliaksandr_Yanachkin\source\repos\StudyReporter\StudyReporter\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Aliaksandr_Yanachkin\source\repos\StudyReporter\StudyReporter\obj\Debug\StudyReporter.csprojAssemblyReference.cache

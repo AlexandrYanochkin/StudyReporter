@@ -13,9 +13,9 @@ namespace StudyReporter.Features.Services.Parsers
 
         private const string _studentCsvPattern = @"[A-Za-z]+;[A-Za-z]+;\d{1}";
 
-        private const char _csvDivider = ';';
-
         private static readonly string _commonCsvPattern = $@"^{_studentCsvPattern}(;{_subjectCsvPattern})+$";
+
+        private const char _csvDivider = ';';
 
         public StudentDto Parse(string inputData)
         {
@@ -55,7 +55,7 @@ namespace StudyReporter.Features.Services.Parsers
 
             var subject = new SubjectDto
             {
-                Name = subjectData[0],
+                Name = subjectData.First(),
                 Marks = subjectData.Skip(1).Select(t => int.Parse(t)).ToList(),
             };
 

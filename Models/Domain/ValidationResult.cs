@@ -1,14 +1,38 @@
-﻿namespace StudyReporter.Models.Domain
+﻿using System;
+
+namespace StudyReporter.Models.Domain
 {
     public class ValidationResult
     {
-        public static ValidationResult SuccessfulResult { get; } = new ValidationResult
-        {
-            IsValid = true,
-            Error = string.Empty,
-        };
+        private string _errorMessage;
 
-        public static ValidationResult Failure(string errorMessage)
+        public bool IsValid { get; private set; }
+
+        public string Error 
+        {
+            get => _errorMessage;
+
+            set
+            {
+                if (value is null)
+                {
+                    throw new ArgumentNullException(nameof(value));
+                }
+
+                _errorMessage = value;
+            }
+        }
+
+        public static ValidationResult SuccessfulResult()
+        {
+            return new ValidationResult
+            {
+                IsValid = true,
+                Error = string.Empty,
+            };
+        }
+
+        public static ValidationResult FailedResult(string errorMessage)
         {
             return new ValidationResult
             {
@@ -16,9 +40,5 @@
                 Error = errorMessage,
             };
         }
-
-        public bool IsValid { get; set; }
-
-        public string Error { get; set; }
     }
 }

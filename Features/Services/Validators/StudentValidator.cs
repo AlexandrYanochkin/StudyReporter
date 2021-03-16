@@ -20,12 +20,12 @@ namespace StudyReporter.Features.Services.Validators
         {
             if (!ValidateFiels(item))
             {
-                return ValidationResult.Failure(ErrorMessages.StudentInvalidFields);
+                return ValidationResult.FailedResult(ErrorMessages.StudentInvalidFields);
             }
 
             if (!ValidateSubjects(item.Subjects))
             {
-                return ValidationResult.Failure(ErrorMessages.SubjectError);
+                return ValidationResult.FailedResult(ErrorMessages.SubjectError);
             }
 
             var subjectValidationResults = item.Subjects.Select(t => _subjectValidator.Validate(t));
@@ -35,7 +35,7 @@ namespace StudyReporter.Features.Services.Validators
                 return subjectValidationResults.First(t => !t.IsValid);
             }
 
-            return ValidationResult.SuccessfulResult;
+            return ValidationResult.SuccessfulResult();
         }
 
         public static bool ValidateFiels(StudentDto studentDto)

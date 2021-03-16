@@ -17,10 +17,10 @@ namespace StudyReporter.Features.Services.Validators
 
             if (!areValidFields)
             {
-                return ValidationResult.Failure(ErrorMessages.SubjectInvalidFields);
+                return ValidationResult.FailedResult(ErrorMessages.SubjectInvalidFields);
             }
 
-            return ValidationResult.SuccessfulResult;
+            return ValidationResult.SuccessfulResult();
         }
 
         private bool MarkInRange(int mark)

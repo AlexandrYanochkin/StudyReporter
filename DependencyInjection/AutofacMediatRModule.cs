@@ -20,7 +20,7 @@ namespace StudyReporter.DependencyInjection
             });
 
             builder
-                .RegisterAssemblyTypes(typeof(ContainerFactory).Assembly)
+                .RegisterAssemblyTypes(typeof(AutofacMediatRModule).Assembly)
                 .AsImplementedInterfaces();
         }
     }
